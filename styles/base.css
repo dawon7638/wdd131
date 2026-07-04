@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -13,6 +13,7 @@ body {
     height: 100px;
     background-color: rgb(40, 32, 130);
     color: white;
+    font-family: 'Lora', serif;
 }
 
 nav {
@@ -20,12 +21,17 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    background-color: red;
+    background-color: darkred;
 }
 
 nav a {
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: lightgray;
 }
 
 main {
@@ -65,7 +71,7 @@ main h1 {
     flex: 1;
 }
 
-.card header {
+.card h2 {
     text-align: center;
     margin-bottom: 20px;
     align-items: center;
