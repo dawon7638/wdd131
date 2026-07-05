@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
 #course-title {
     display: flex;
@@ -37,8 +42,11 @@ nav a:hover {
 main {
 
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 
 }
 
@@ -51,7 +59,6 @@ main h1 {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -75,12 +82,17 @@ main h1 {
     text-align: center;
     margin-bottom: 20px;
     align-items: center;
-    width: 100%;
+    width: 10em;
 }
 
 .card img {
     box-shadow: 5px 5px 5px gray;
     border-radius: 5px;
+}
+
+.card p {
+
+    width: 15em
 }
 
 .me {
@@ -93,4 +105,8 @@ main h1 {
 
 footer {
     text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: darkred;
+    color: white;
 }
