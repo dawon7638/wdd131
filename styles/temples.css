@@ -76,8 +76,9 @@ main h2 {
 */
 
 nav {
+    display: flex;
+    justify-content: center;
     background-color: purple;
-    width: 100%;
 }
 
 

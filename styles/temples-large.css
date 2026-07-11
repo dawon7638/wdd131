@@ -1,31 +1,33 @@
+/* ------------------------------------
+   Large View (40em / 640px and above)
+------------------------------------- */
+
 @media only screen and (min-width: 40em) {
 
+    /* Hide the hamburger menu */
+    #menu {
+        display: none;
+    }
 
+    /* Display the navigation horizontally */
+    .navigation {
+        display: flex;
+        text-align: center;
+        padding: 1rem;
+        list-style: none;
+    }
 
-#menu {
-    display: none;
-}
+    /* Show all navigation items */
+    .navigation li {
+        display: block;
+    }
 
-.navigation {
-    display: flex;
-    justify-content: flex-end;
-    max-width: none;
-}
-
-.navigation li {
-    display: block;
-}
-
-.navigation {
-    text-align: center;
-    padding: 1rem;
-}
-.temple-grid {
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+    /* Create a three-column temple gallery */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
 }
