@@ -1,0 +1,42 @@
+{
+	"Full HTML Boilerplate": {
+		"prefix": "myhtml",
+		"body": [
+			"<!doctype html>",
+			"<html lang=\"en-US\">",
+			"<head>",
+			"    <meta charset=\"utf-8\">",
+			"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+			"",
+			"    <title>${1:Page Title}</title>",
+			"    <meta name=\"description\" content=\"${2:Page description}\">",
+			"    <meta name=\"author\" content=\"${3:Your Name}\">",
+			"",
+			"    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">",
+			"    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>",
+			"    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap\" rel=\"stylesheet\">",
+			"",
+			"    <link rel=\"stylesheet\" href=\"styles/normalize.css\">",
+			"    <link rel=\"stylesheet\" href=\"styles/${4:site}.css\">",
+			"",
+			"    <script src=\"scripts/${5:site}.js\" defer></script>",
+			"</head>",
+			"<body>",
+			"    <header>",
+			"        <h1>${6:Page Title}</h1>",
+			"    </header>",
+			"",
+			"    <main>",
+			"        ${0}",
+			"    </main>",
+			"",
+			"    <footer>",
+			"        <p>&copy; ${7:2026} ${3:Your Name}</p>",
+			"    </footer>",
+			"</body>",
+			"</body>",
+			"</html>"
+		],
+		"description": "WDD HTML5 boilerplate"
+	}
+}
