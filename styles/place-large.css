@@ -25,6 +25,8 @@
       font-size: 50px;
    }
 
+   
+
    main {
       position: relative;
    }
@@ -79,4 +81,9 @@
       content: " ☀️";
       margin-left: 0.5em;
    }
+
+   footer, header {
+   background-color: #0E5AA7;
+   color: white;
+}
 }
