@@ -31,9 +31,9 @@
 			"    </main>",
 			"",
 			"    <footer>",
-			"        <p>&copy; ${7:2026} ${3:Your Name}</p>",
+			"        <p>Copyright &copy; <span id=\"current-year\"></span> Dawon Gregory | 🇺🇸 ⭐ Texas, USA 🤠</p>",
+			"        <p>Last Modified: <span id=\"lastModified\"></span></p>",
 			"    </footer>",
-			"</body>",
 			"</body>",
 			"</html>"
 		],

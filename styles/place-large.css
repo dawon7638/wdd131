@@ -1,0 +1,82 @@
+/* ------------------------------------
+   Large View
+------------------------------------- */
+
+@media only screen and (min-width: 900px) {
+   .hero {
+      width: 100%;
+   }
+
+   .hero picture {
+      display: block;
+   }
+
+   .hero img {
+      display: block;
+      width: 100%;
+      height: auto;
+   }
+
+   header {
+      padding: 3em;
+   }
+
+   h1 {
+      font-size: 50px;
+   }
+
+   main {
+      position: relative;
+   }
+
+   #country-info {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   section {
+      justify-content: center;
+      background-color: #EAF4FF;
+      border: 1px solid rgba(14, 90, 167, 0.2);
+   }
+
+   section li {
+      display: grid;
+      grid-template-columns: 7em 1fr;
+      margin: 1em 1em 1em 0.5em;
+      text-align: left;
+   }
+
+   h2 {
+      background-color: rgba(255, 255, 255, 0.6);
+      position: relative;
+      right: 1em;
+   }
+
+   #data,
+   #weather {
+      position: absolute;
+      background: rgba(234, 244, 255, 0.6);
+      border: 1px solid rgba(14, 90, 167, 0.2);
+      padding: 1rem;
+   }
+
+   #data {
+      top: 3rem;
+      left: 3rem;
+   }
+
+   #weather {
+      bottom: 3rem;
+      right: 3rem;
+   }
+
+   #the-sun {
+      display: none;
+   }
+
+   #weather h2::after {
+      content: " ☀️";
+      margin-left: 0.5em;
+   }
+}
