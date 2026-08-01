@@ -1,0 +1,210 @@
+/* 
+   Global Reset
+   Removes default browser spacing and uses border-box sizing
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+   Base Page Styles
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* 
+   Header Layout
+   Mobile view uses flex-wrap so navigation can move below title/menu
+*/
+
+header {
+    background-color: purple;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*
+   Page Headings
+*/
+
+#page-title,
+main h2,
+h3 {
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+
+/*
+   Hamburger Menu Button
+   Visible only in mobile view
+*/
+
+#menu {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+
+/*
+   Hamburger icon
+*/
+
+#menu::before {
+    content: "≡";
+}
+
+
+/*
+   Navigation Container
+*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: purple;
+}
+
+
+/*
+   Navigation List
+*/
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+
+/*
+   Hide navigation links on mobile
+   JavaScript adds the .show class when clicked
+*/
+
+.navigation li {
+    display: none;
+}
+
+
+/*
+   Navigation Links
+*/
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+
+/*
+   Hover Effect
+*/
+
+.navigation a:hover {
+    background-color: white;
+    color: purple;
+}
+
+
+/*
+   Display menu items when hamburger is clicked
+*/
+
+.show li {
+    display: block;
+}
+
+
+/*
+   Change hamburger icon to X
+*/
+
+#menu.show::before {
+    content: "×";
+}
+
+
+/*
+   Temple Gallery
+   Mobile-first: one column layout
+*/
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+/*
+   Individual Temple Cards
+*/
+
+.temple-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(236, 232, 232);
+}
+
+
+.temple-card span {
+    color: purple;
+    text-decoration: none;
+}
+
+
+/*
+   Responsive Images
+   Maintains original aspect ratio
+*/
+
+.temple-card img {
+    width: 75%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin: 2em 0 2em 0;
+}
+
+
+
+
+/*
+   Footer
+*/
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: purple;
+    color: white;
+}
