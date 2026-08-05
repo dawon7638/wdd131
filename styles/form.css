@@ -1,0 +1,253 @@
+/* ==========================================
+   Color Variables
+========================================== */
+
+:root {
+    --primary: #0B6E4F;
+    --secondary: #F4F1DE;
+    --accent: #D62828;
+    --text: #333333;
+    --white: #FFFFFF;
+    --border: #DDDDDD;
+}
+
+/* ==========================================
+   Reset
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   Body
+========================================== */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--secondary);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+}
+
+/* ==========================================
+   Main
+========================================== */
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* ==========================================
+   Section
+========================================== */
+
+section {
+    background-color: var(--white);
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+section h2 {
+    font-family: "Merriweather", serif;
+    color: var(--primary);
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================
+   Form
+========================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    padding: .75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================
+   Focus
+========================================== */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(11, 110, 79, .25);
+    border-color: var(--primary);
+}
+
+/* ==========================================
+   Rating Stars
+========================================== */
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 280px;
+    margin: .5rem 0;
+}
+
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-option span {
+    font-size: .75rem;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.rating-option input[type="radio"] {
+    width: auto;
+    margin-top: .3rem;
+}
+
+/* ==========================================
+   Features
+========================================== */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.features label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.features input[type="checkbox"] {
+    width: auto;
+}
+
+/* ==========================================
+   Submit Button
+========================================== */
+
+button,
+input[type="submit"] {
+    margin-top: 1.5rem;
+    padding: .9rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: var(--primary);
+}
+
+/* ==========================================
+   Review Confirmation Page
+========================================== */
+
+.review-card {
+    max-width: 700px;
+    background-color: var(--white);
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+    text-align: center;
+}
+
+.review-card h2 {
+    font-family: "Merriweather", serif;
+    color: var(--primary);
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: .5rem;
+}
+
+.review-card p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+#reviewCount {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ==========================================
+   Links
+========================================== */
+
+.button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .9rem 1.5rem;
+    background-color: var(--accent);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: var(--primary);
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}

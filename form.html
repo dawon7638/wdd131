@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Product Review Form</title>
+    <meta name="description"
+        content="Submit a product review including product rating, installation date, useful features, and written comments.">
+    <meta name="author" content="Dawon Gregory">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Product Review Form</h2>
+            <p>Please fill out the form below to submit your product review.</p>
+
+            <form id="reviewForm" method="get" action="review.html">
+
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+
+                <label>Overall Rating:</label>
+
+                <div class="rating">
+
+                    <div class="rating-option">
+                        <span>&star;</span>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </div>
+
+                    <div class="rating-option">
+                        <span>&star;&star;</span>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                    </div>
+
+                    <div class="rating-option">
+                        <span>&star;&star;&star;</span>
+                        <input type="radio" id="rating3" name="rating" value="3">
+                    </div>
+
+                    <div class="rating-option">
+                        <span>&star;&star;&star;&star;</span>
+                        <input type="radio" id="rating4" name="rating" value="4">
+                    </div>
+
+                    <div class="rating-option">
+                        <span>&star;&star;&star;&star;&star;</span>
+                        <input type="radio" id="rating5" name="rating" value="5">
+                    </div>
+
+                </div>
+
+                <label for="dateInstalled">Date Installed:</label>
+                <input type="date" id="dateInstalled" name="dateInstalled" required>
+
+                <label>Useful Features:</label>
+
+                <div class="features">
+                    <label>
+                        <input type="checkbox" id="feature1" name="features" value="durability">
+                        Durability
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="feature2" name="features" value="ease">
+                        Ease of Use
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="feature3" name="features" value="performance">
+                        Performance
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="feature4" name="features" value="design">
+                        Design
+                    </label>
+                </div>
+
+                <label for="reviewText">Written Review:</label>
+                <textarea id="reviewText" name="reviewText" rows="5"></textarea>
+
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName">
+
+                <input type="submit" value="Submit Review">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span id="current-year"></span> Dawon Gregory | 🇺🇸 ⭐ Texas, USA 🤠</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
