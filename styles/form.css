@@ -126,8 +126,7 @@ textarea:focus {
 .rating {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 280px;
+    max-width: 250px;
     margin: .5rem 0;
 }
 
@@ -137,15 +136,15 @@ textarea:focus {
     align-items: center;
 }
 
-.rating-option span {
-    font-size: .75rem;
-    letter-spacing: -1px;
-    line-height: 1;
+.rating-option label {
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0;
 }
 
 .rating-option input[type="radio"] {
     width: auto;
-    margin-top: .3rem;
+    margin-top: .25rem;
 }
 
 /* ==========================================
